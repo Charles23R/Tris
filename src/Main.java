@@ -33,6 +33,7 @@ public class Main {
         remplir(biblio1, biblio3);
         remplir(biblio1, biblio4);
         remplir(biblio1, biblio5);
+        algo(biblio1);
 
         System.out.println("___________________________________________________________________________________");
         System.out.println("TreeSet en ordre d'année");
@@ -46,12 +47,11 @@ public class Main {
         }
         System.out.println("___________________________________________________________________________________");
         System.out.println("En ordre d'année avec l'algorythme");
-        algo(biblio1);
         for (Livre livre : biblio1){
             livre.afficher();
         }
         System.out.println("___________________________________________________________________________________");
-        System.out.println("Collections.sort sans le comparateur");
+        System.out.println("Collections.sort sans le comparateur (en ordre d'année)");
         Collections.sort(biblio4);
         for (Livre livre : biblio4){
             livre.afficher();
